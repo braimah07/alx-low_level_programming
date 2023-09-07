@@ -1,2 +1,2 @@
 #!/bin/bash
-export CFILE=2-main.c && gcc -S "$CFILE" -o "${CFILE%.c}.s" && ./2-assembler
+export CFILE=2-main.c && gcc "$CFILE" -o 2-assembler && ./2-assembler

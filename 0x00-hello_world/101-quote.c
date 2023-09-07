@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall your_program.c -o your_program
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -o quote 101-quote.c

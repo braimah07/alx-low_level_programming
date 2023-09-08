@@ -7,3 +7,4 @@
 6
 7     return (0);
 8 }
+gcc -o wall

@@ -1,3 +1,16 @@
-#!/bin/bash
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 4-puts.c && ./a.out
-echo $?
+#include <stdio.h>
+
+/**
+ *main - entry
+ *
+ *Return: 0
+ */
+
+
+int main(void)
+{
+	puts("programming is like building a multilingual puzzle,\n");
+
+	return (0);
+}
+

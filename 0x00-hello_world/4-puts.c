@@ -1,16 +1,11 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
- *main - entry
+ * main - Entry point
  *
- *Return: 0
+ * Return: Always 1 (FAILURE)
  */
-
-
 int main(void)
 {
-	puts("programming is like building a multilingual puzzle,\n");
-
-	return (0);
-}
-
+    char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+    

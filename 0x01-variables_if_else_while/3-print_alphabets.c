@@ -10,9 +10,18 @@
 int main(void)
 {
 	char letter = 'a';
+	int i; /* Declare i outside the loop */
 
-	while (letter <= 'z')
-	{
+	for (i = 0; i < 26; i++)
+{
+	putchar(letter);
+	letter++;
+	}
+
+	letter = 'A';
+
+	for (i = 0; i < 26; i++)
+{
 	putchar(letter);
 	letter++;
 	}

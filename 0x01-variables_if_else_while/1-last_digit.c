@@ -1,28 +1,16 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
-/**
- *main - entry
- *
- *Return: 0
- */
 
 int main(void)
 {
-	int n;
+    char letter = 'a';
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+    while (letter <= 'z')
+    {
+        putchar(letter);
+        letter++;
+    }
 
-	printf("Last digit of %d is %d and is ", n, abs(n) % 10);
+    putchar('\n');
 
-	if (abs(n) % 10 > 5)
-	printf("greater than 5\n");
-	else if (abs(n) % 10 == 0)
-	printf("0\n");
-	else
-	printf("less than 6 and not 0\n");
-
-	return (0);
+    return 0;
 }

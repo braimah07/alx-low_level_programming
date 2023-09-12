@@ -1,12 +1,3 @@
-#include <unistd.h>
-
-/**
-*main - entry
-*
-*Return: 0
-*/
-
-int main(void)
 #include <stdio.h>
 
 int main(void)

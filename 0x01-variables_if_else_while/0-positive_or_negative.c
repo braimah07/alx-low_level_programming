@@ -10,7 +10,6 @@
 *Return: 0
 */
 
-
 int main(void)
 {
 	int n;
@@ -18,19 +17,12 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	printf("%i\n")
-	if (n > 0)
-{
-	printf("is positive\n");
-	}
-	else if (n == 0)
-{
-	printf("Number is zero");
-
-	} else
-}
-	printf("number is less than 0");
+	printf(n > 0){
+		printf("is positive\n");
+	} else if (n == 0) {
+		printf("Number is zero");
+	} else {
+		printf("number is less than 0");
 	}
 	return (0);
-
 }

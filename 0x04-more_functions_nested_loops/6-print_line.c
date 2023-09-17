@@ -7,11 +7,11 @@ include "main.h"
 
 void print_line(int n)
 {
-	if (n < 1)
+	if (n <= 1)
 	_putchar('\n');
 	else
 	{
-	while (n--)
+	for (int i = 0; i < n; i++)
 	_putchar('_');
 	_putchar('\n');
 	}

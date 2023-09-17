@@ -29,7 +29,7 @@ long largest_prime_factor(long n)
 	if (n > 2)
 	largest = n;
 
-	return largest;
+	return (largest);
 }
 
 int main(void)

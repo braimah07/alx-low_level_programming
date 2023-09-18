@@ -1,34 +1,32 @@
-#include <stdlib.h>
 #include "main.h"
-#include <limits.h>
-#include <string.h>
 
-/**
- * _atoi - coverts a string to integer
- * @str: pointer to string to be converted
- *
- * Return: converted string
- */
-
-int _atoi(char *str)
+int _atoi(char *s)
 {
-        int sign = 1, base = 0, i = 0;
+    int sign = 1; // Initialize sign to positive
+    int result = 0;
 
-        for (i = 0; str[i] != '\0' && (str[i] < '0' || str[i] > '9'); i++)
+    // Skip leading spaces and check for sign
+    while (*s == ' ' || (*s == '-' && *(s + 1) >= '0' && *(s + 1) <= '9') || (*s == '+' && *(s + 1) >= '0' && *(s + 1) <= '9'))
+    {
+        if (*s == '-')
+            sign *= -1;
+        s++;
+    }
+
+    // Convert the remaining digits
+    while (*s >= '0' && *s <= '9')
+    {
+        // Check for overflow
+        if (result > INT_MAX / 10 || (result == INT_MAX / 10 && (*s - '0') > INT_MAX % 10))
         {
-                if (str[i] == '-' || str[i] == '+')
-                sign *= 1 - 2 * (str[i] == '-');
-                if (str[i + 1] == '\0')
-                return (0);
+            if (sign == 1)
+                return INT_MAX;
+            else
+                return INT_MIN;
         }
-                while (str[i] >= '0' && str[i] <= '9')
-                {
-                        if (base > INT_MAX / 10 || (base == INT_MAX / 10 && str[i] - '0' > 7))
-                        {
-                                if (sign == 1)
-                                return (INT_MAX);
-                        else
-                                return (INT_MIN);
-                        }
-                        base = 10 * base + (str[i++] - '0');
+        result = result * 10 + (*s - '0');
+        s++;
+    }
 
+    return result * sign;
+}

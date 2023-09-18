@@ -1,4 +1,25 @@
-#include "main.h"
+#include <stdio.h>
+
+int _atoi(char *s);
+
+int main(void)
+{
+    printf("%d\n", _atoi("4"));
+    printf("%d\n", _atoi("10"));
+    printf("%d\n", _atoi("-3"));
+    printf("%d\n", _atoi("99"));
+    printf("%d\n", _atoi("-40"));
+    printf("%d\n", _atoi(" ------++++++-----+++++--98"));
+    printf("%d\n", _atoi("Hello ----- world\n"));
+    printf("%d\n", _atoi("+++++ +-+ 2242454"));
+    printf("%d\n", _atoi("2147483647"));
+    printf("%d\n", _atoi(" + + - -98 Battery Street; San Francisco, CA 94111 - USA "));
+    printf("%d\n", _atoi("---++++ -++ Sui - te - 402 #cisfun :)"));
+    printf("%d\n", _atoi(""));
+    printf("%d\n", _atoi("-2147483648"));
+
+    return 0;
+}
 
 int _atoi(char *s)
 {

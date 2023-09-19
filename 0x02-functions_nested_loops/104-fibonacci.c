@@ -1,23 +1,35 @@
-# Initialize the first two Fibonacci numbers
-a, b = 1, 2
+#include <stdio.h>
 
-# Print the first two numbers
-print(a, end=", ")
-print(b, end=", ")
+/**
+ * main - Entry point of the program
+ *
+ * Description: Calculates and prints the first 98 Fibonacci numbers,
+ * starting with 1 and 2, separated by a comma and space.
+ *
+ * Return: 0 for success
+ */
+int main(void)
+{
+    unsigned long a = 1, b = 2, next;
+    int count = 0;
 
-# Initialize a counter
-count = 2
+    printf("%lu, %lu, ", a, b);
+    count += 2;
 
-# Loop to calculate and print the next 96 Fibonacci numbers
-while count < 98:
-    # Calculate the next Fibonacci number
-    a, b = b, a + b
+    while (count < 98)
+    {
+        next = a + b;
+        printf("%lu", next);
 
-    # Print the number followed by a comma and space
-    print(b, end=", ")
+        count++;
+        if (count < 98)
+            printf(", ");
+        else
+            printf("\n");
 
-    # Increment the counter
-    count += 1
+        a = b;
+        b = next;
+    }
 
-# Print a new line to separate the numbers
-print()
+    return (0);
+}

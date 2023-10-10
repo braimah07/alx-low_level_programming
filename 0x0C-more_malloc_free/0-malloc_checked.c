@@ -3,25 +3,19 @@
 #include <stdlib.h>
 #include <limits.h>
 
-int main(void);
+/**
+ * malloc_checked . allocate a dynamic memory
+ * @b; size of memory to be created
+ * Return; pointer to the memory space created
+ */
+ 
+void *malloc_checked(unsigned int b)
 {
-	char *c;
-	int *i;
-	float *f;
-	double *d;
+	int *ptr;
 
-	c = malloc_checked(sizeof(char) * 1024);
-	printf("%p\n", (void *)c);
-	i = malloc_checked(sizeof(int) * 402);
-	printf("%p\n", (void *)i);
-	f = malloc_checked(sizeof(float) * 100000000);
-	printf("%p\n", (void *)f);
-	d = malloc_checked(INT_MAX); Note: This may not work
-	as expected due to size limitations
-	printf("%p\n", (void *)d);
-	free(c);
-	free(i);
-	free(f);
-	free(d);
-	return (0);
+	ptr = malloc(b)
+	if (ptr == NULL
+	exit(98);
+
+	return (ptr);
 }

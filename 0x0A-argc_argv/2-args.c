@@ -8,11 +8,19 @@
  */
 int main(int argc, char *argv[])
 {
+<<<<<<< HEAD
+=======
+
+>>>>>>> b04ff48 (My commit)
 	int i;
 
 	for (i = 0; i < argc; i++)
 	{
+<<<<<<< HEAD
 		printf("%s\n", argv[i]);
+=======
+	printf("%s\n", argv[i]);
+>>>>>>> b04ff48 (My commit)
 	}
 	return (0);
 }

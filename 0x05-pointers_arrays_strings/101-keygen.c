@@ -15,17 +15,29 @@ int main(void)
 {
 	char password[100];
 	int randValue, num = 0, i = 0;
+<<<<<<< HEAD
 
+=======
+>>>>>>> b04ff48 (My commit)
 	srand(time(NULL));
 
 	while (num < stopLimit)
 	{
+<<<<<<< HEAD
 		randValue = random() % asciiStop;
 		if (randValue > asciiStart)
 		{
 			password[i++] = randValue;
 			num += randValue;
 		}
+=======
+	randValue = random() % asciiStop;
+	if (randValue > asciiStart)
+	{
+	password[i++] = randValue;
+	num += randValue;
+	}
+>>>>>>> b04ff48 (My commit)
 	}
 	password[i++] = (2772 - num);
 	password[i] = '\0';

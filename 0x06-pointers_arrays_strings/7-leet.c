@@ -17,6 +17,7 @@ char *leet(char *s)
 
 	while (s[i] != '\0')
 	{
+<<<<<<< HEAD
 		for (j = 0; valid[j] != '\0'; j++)
 		{
 			if (s[i] == testCase1[j] || s[i] == testCase2[j])
@@ -26,6 +27,17 @@ char *leet(char *s)
 			}
 		}
 		i++;
+=======
+	for (j = 0; valid[j] != '\0'; j++)
+	{
+	if (s[i] == testCase1[j] || s[i] == testCase2[j])
+	{
+	s[i] = valid[j];
+	break;
+	}
+	}
+	i++;
+>>>>>>> b04ff48 (My commit)
 	}
 	return (s);
 }

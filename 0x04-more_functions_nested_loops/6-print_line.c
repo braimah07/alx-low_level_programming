@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #include "main.h"
+=======
+include "main.h"
+>>>>>>> b04ff48 (My commit)
 
 /**
  * print_line - print lines (_) n number of times
@@ -7,6 +11,7 @@
 
 void print_line(int n)
 {
+<<<<<<< HEAD
 	if (n < 1)
 		_putchar('\n');
 	else
@@ -14,5 +19,14 @@ void print_line(int n)
 		while (n--)
 			_putchar('_');
 		_putchar('\n');
+=======
+	if (n <= 1)
+	_putchar('\n');
+	else
+	{
+	for (int i = 0; i < n; i++)
+	_putchar('_');
+	_putchar('\n');
+>>>>>>> b04ff48 (My commit)
 	}
 }

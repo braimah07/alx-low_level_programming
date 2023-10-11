@@ -12,11 +12,20 @@ void puts_half(char *s)
 
 	if (len % 2 == 0)
 	{
+<<<<<<< HEAD
 		for (i = len / 2; i < len; i++)
 			_putchar(s[i]);
 	}
 	else
 		for (i = (len / 2) + 1; i < len; i++)
 			_putchar(s[i]);
+=======
+	for (i = len / 2; i < len; i++)
+	_putchar(s[i]);
+	}
+	else
+	for (i = (len / 2) + 1; i < len; i++)
+	_putchar(s[i]);
+>>>>>>> b04ff48 (My commit)
 	_putchar('\n');
 }

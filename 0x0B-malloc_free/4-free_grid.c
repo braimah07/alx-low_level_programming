@@ -13,7 +13,13 @@ void free_grid(int **grid, int row)
 	int i;
 
 	for (i = 0; i < row; i++)
+<<<<<<< HEAD
 		free(grid[i]);
 	free(grid);
 }
 
+=======
+	free(grid[i]);
+	free(grid);
+}
+>>>>>>> b04ff48 (My commit)

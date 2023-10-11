@@ -1,2 +1,6 @@
 #!/bin/bash
+<<<<<<< HEAD
 gcc $CFILE -o cisfun
+=======
+gcc "$CFILE" -o cisfun
+>>>>>>> b04ff48 (My commit)

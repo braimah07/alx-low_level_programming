@@ -13,9 +13,15 @@ void print_array(int *arr, int n)
 
 	for (i = 0; i < n; i++)
 	{
+<<<<<<< HEAD
 		printf("%d", arr[i]);
 		if (i < n - 1)
 		printf(", ");
+=======
+	printf("%d", arr[i]);
+	if (i < n - 1)
+	printf(", ");
+>>>>>>> b04ff48 (My commit)
 	}
 	putchar('\n');
 }

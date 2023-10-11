@@ -13,10 +13,18 @@ void rev_string(char *str)
 
 	while (i > j)
 	{
+<<<<<<< HEAD
 		tmp = str[i];
 		str[i] = str[j];
 		str[j] = tmp;
 		i--;
 		j++;
+=======
+	tmp = str[i];
+	str[i] = str[j];
+	str[j] = tmp;
+	i--;
+	j++;
+>>>>>>> b04ff48 (My commit)
 	}
 }

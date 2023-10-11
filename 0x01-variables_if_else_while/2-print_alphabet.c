@@ -1,4 +1,5 @@
 #include <stdio.h>
+<<<<<<< HEAD
 #include <stdlib.h>
 #include <time.h>
 /**
@@ -15,5 +16,27 @@ int main(void)
 		putchar(a);
 	}
 		putchar('\n');
+=======
+
+/**
+ *main - entry
+ *
+ *Return: 0
+ */
+
+
+int main(void)
+{
+	char letter = 'a';
+
+	while (letter <= 'z')
+	{
+	putchar(letter);
+	letter++;
+	}
+
+	putchar('\n');
+
+>>>>>>> b04ff48 (My commit)
 	return (0);
 }

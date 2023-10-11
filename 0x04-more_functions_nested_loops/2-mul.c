@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 #include "main.h"
 
+=======
+>>>>>>> b04ff48 (My commit)
 /**
  * mul - multiply 2 int
  * @a: first int

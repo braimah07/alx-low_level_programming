@@ -9,7 +9,13 @@
 int _isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
+<<<<<<< HEAD
 		return (1);
 	else
 		return (0);
+=======
+	return (1);
+	else
+	return (0);
+>>>>>>> b04ff48 (My commit)
 }

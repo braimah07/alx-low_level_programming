@@ -13,6 +13,7 @@ int largest_number(int a, int b, int c)
 {
 	int largest;
 
+<<<<<<< HEAD
 	if (a > b && a > c)
 	{
 		largest = a;
@@ -24,6 +25,19 @@ int largest_number(int a, int b, int c)
 	else
 	{
 		largest = c;
+=======
+	if (a >= b && a >= c)
+	{
+	largest = a;
+	}
+	else if (b >= a && b >= c)
+	{
+	largest = b;
+	}
+	else
+	{
+	largest = c;
+>>>>>>> b04ff48 (My commit)
 	}
 	return (largest);
 }

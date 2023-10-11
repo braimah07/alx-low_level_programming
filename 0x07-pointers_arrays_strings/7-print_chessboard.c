@@ -13,8 +13,14 @@ void print_chessboard(char (*a)[8])
 
 	for (i = 0; i < 8; i++)
 	{
+<<<<<<< HEAD
 		for (j = 0; j < 8; j++)
 			printf("%c", a[i][j]);
 		putchar('\n');
+=======
+	for (j = 0; j < 8; j++)
+	printf("%c", a[i][j]);
+	putchar('\n');
+>>>>>>> b04ff48 (My commit)
 	}
 }

@@ -9,10 +9,18 @@
 void _puts_recursion(char *s)
 {
 	if (strlen(s) < 1)
+<<<<<<< HEAD
 		_putchar('\n');
 	else
 	{
 		_putchar(*s);
 		_puts_recursion(s + 1);
+=======
+	_putchar('\n');
+	else
+	{
+	_putchar(*s);
+	_puts_recursion(s + 1);
+>>>>>>> b04ff48 (My commit)
 	}
 }

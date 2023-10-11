@@ -16,3 +16,7 @@ char *_strncat(char *dest, char *src, int n)
 
 	return (dest);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b04ff48 (My commit)

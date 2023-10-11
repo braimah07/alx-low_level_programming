@@ -14,3 +14,7 @@ void print_square(int size);
 void print_triangle(int size);
 
 #endif
+<<<<<<< HEAD
+=======
+
+>>>>>>> b04ff48 (My commit)

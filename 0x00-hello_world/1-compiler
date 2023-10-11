@@ -1,2 +1,6 @@
 #!/bin/bash
+<<<<<<< HEAD
 gcc -c $CFILE
+=======
+export CFILE=1-main.c && gcc -c "$CFILE" -o "${CFILE%.c}.o" && ./1-compiler
+>>>>>>> b04ff48 (My commit)

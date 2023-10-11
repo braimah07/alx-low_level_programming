@@ -9,5 +9,11 @@
  */
 int _putchar(char c)
 {
+<<<<<<< HEAD
 	return (write(1, &c, 1));
 }
+=======
+        return (write(1, &c, 1));
+}
+
+>>>>>>> b04ff48 (My commit)

@@ -11,6 +11,7 @@ void print_to_98(int n)
 {
 	if (n <= 98)
 	{
+<<<<<<< HEAD
 		for (; n <= 98; n++)
 		{
 			printf("%d", n);
@@ -30,5 +31,26 @@ void print_to_98(int n)
 		printf(", ");
 		}
 		printf("\n");
+=======
+	for (; n <= 98; n++)
+	{
+	printf("%d", n);
+	if (n == 98)
+	continue;
+	printf(", ");
+	}
+	printf("\n");
+	}
+	else
+	{
+	for (; n >= 98; n--)
+	{
+	printf("%d", n);
+	if (n == 98)
+	continue;
+	printf(", ");
+	}
+	printf("\n");
+>>>>>>> b04ff48 (My commit)
 	}
 }

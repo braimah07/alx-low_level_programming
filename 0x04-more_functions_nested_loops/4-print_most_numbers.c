@@ -12,8 +12,15 @@ void print_most_numbers(void)
 
 	for (c = '0'; c <= '9'; c++)
 	{
+<<<<<<< HEAD
 		if (!(c == '2' || c == '4'))
 		_putchar(c);
 	}
 		_putchar('\n');
+=======
+	if (!(c == '2' || c == '4'))
+	_putchar(c);
+	}
+	_putchar('\n');
+>>>>>>> b04ff48 (My commit)
 }

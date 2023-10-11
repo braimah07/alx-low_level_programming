@@ -12,6 +12,7 @@ void more_numbers(void)
 
 	for (a = 0; a < 10; a++)
 	{
+<<<<<<< HEAD
 		for (b = 0; b < 15; b++)
 		{
 			if (b >= 10)
@@ -19,5 +20,14 @@ void more_numbers(void)
 			_putchar((b % 10) + 48);
 		}
 		_putchar('\n');
+=======
+	for (b = 0; b < 15; b++)
+	{
+	if (b >= 10)
+	_putchar((b / 10) + 48);
+	_putchar((b % 10) + 48);
+	}
+	_putchar('\n');
+>>>>>>> b04ff48 (My commit)
 	}
 }

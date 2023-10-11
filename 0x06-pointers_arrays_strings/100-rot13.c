@@ -14,6 +14,7 @@ char *rot13(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
+<<<<<<< HEAD
 		for (ii = 0; input[ii] != '\0'; ii++)
 		{
 			if (((s[i] <= 'z' && s[i] >= 'a') || (s[i] <= 'Z' && s[i] >= 'A'))
@@ -23,6 +24,17 @@ char *rot13(char *s)
 				break;
 			}
 		}
+=======
+	for (ii = 0; input[ii] != '\0'; ii++)
+	{
+	if (((s[i] <= 'z' && s[i] >= 'a') || (s[i] <= 'Z' && s[i] >= 'A'))
+	&& s[i] == input[ii])
+	{
+	s[i] = output[ii];
+	break;
+	}
+	}
+>>>>>>> b04ff48 (My commit)
 	}
 	return (s);
 }

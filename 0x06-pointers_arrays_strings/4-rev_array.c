@@ -13,8 +13,15 @@ void reverse_array(int *arr, int n)
 	int i, j;
 
 	for (i = 0; i < n; i++)
+<<<<<<< HEAD
 		tmp[i] = arr[i];
 
 	for (i = n - 1, j = 0; i >= 0; i--, j++)
 		arr[j] = tmp[i];
+=======
+	tmp[i] = arr[i];
+
+	for (i = n - 1, j = 0; i >= 0; i--, j++)
+	arr[j] = tmp[i];
+>>>>>>> b04ff48 (My commit)
 }

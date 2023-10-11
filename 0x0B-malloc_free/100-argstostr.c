@@ -30,7 +30,11 @@ int i = 0, nc = 0, j = 0, cmpt = 0;
 char *s;
 
 if (ac == 0 || av == NULL)
+<<<<<<< HEAD
 	return (NULL);
+=======
+        return (NULL);
+>>>>>>> b04ff48 (My commit)
 
 for (; i < ac; i++, nc++)
 	nc += _strlen(av[i]);
@@ -42,12 +46,19 @@ if (s == 0)
 for (i = 0; i < ac; i++)
 {
 	for (j = 0; av[i][j] != '\0'; j++, cmpt++)
+<<<<<<< HEAD
 		s[cmpt] = av[i][j];
+=======
+	s[cmpt] = av[i][j];
+>>>>>>> b04ff48 (My commit)
 
 	s[cmpt] = '\n';
 	cmpt++;
 }
+<<<<<<< HEAD
 s[cmpt] = '\0';
 
 return (s);
 }
+=======
+>>>>>>> b04ff48 (My commit)

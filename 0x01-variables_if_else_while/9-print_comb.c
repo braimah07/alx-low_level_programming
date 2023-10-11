@@ -1,4 +1,5 @@
 #include <stdio.h>
+<<<<<<< HEAD
 #include <stdlib.h>
 #include <time.h>
 /**
@@ -19,6 +20,31 @@ int main(void)
 			putchar(' ');
 		}
 	}
+=======
+
+/**
+ *main - entry
+ *
+ *Return: 0
+ */
+
+
+int main(void)
+{
+	int digit;
+
+	for (digit = 0; digit <= 9; digit++)
+	{
+	putchar(digit + '0');
+
+	if (digit < 9)
+	{
+	putchar(',');
+	putchar(' ');
+	}
+	}
+
+>>>>>>> b04ff48 (My commit)
 	putchar('\n');
 	return (0);
 }

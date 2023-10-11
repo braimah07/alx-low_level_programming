@@ -11,7 +11,11 @@ void print_numbers(void)
 
 	for (c = '0'; c <= '9'; c++)
 	{
+<<<<<<< HEAD
 		_putchar(c);
+=======
+	_putchar(c);
+>>>>>>> b04ff48 (My commit)
 	}
 	_putchar('\n');
 }

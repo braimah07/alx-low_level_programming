@@ -15,7 +15,11 @@ int main(void)
 /*
  *	while (i < 10)
  *	{
+<<<<<<< HEAD
  *		putchar(i);
+=======
+ *	putchar(i);
+>>>>>>> b04ff48 (My commit)
  *	}
  */
 	printf("Infinite loop avoided! \\o/\n");
